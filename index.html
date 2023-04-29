@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Live Instructional Video</title>
+    <style>
+      /* Add your CSS styles here */
+      #video-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 20px;
+      }
+      #student-video {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+      }
+      #emotional-status {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="video-container">
+      <div id="instructional-video">
+        <!-- Add your instructional video here -->
+      </div>
+      <div id="student-video">
+        <!-- Add space for live video of the student listening to the instructional video here -->
+      </div>
+      <div id="emotional-status">
+        <!-- Add space for the student's emotional status here -->
+      </div>
+    </div>
+    <form id="form" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
